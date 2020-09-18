@@ -1,9 +1,13 @@
+///////////////
+// by Dukend
+///////////////
+
 #include <bits/stdc++.h>
 
 class Long
 {
 private:
-	uint32_t first, second;
+	uint64_t first, second;
 	uint64_t glue() const
 	{ // склейка чисел
 		uint64_t result;
@@ -20,6 +24,16 @@ public:
 	void read()
 	{
 		std::cin >> first >> second;
+		if (this->first > std::numeric_limits<uint32_t>::max() || this->first < 0)
+		{
+			std::cout << "В числе ошибка" << std::endl;
+			exit(1);
+		}
+		if (this->second > std::numeric_limits<uint32_t>::max() || this->second < 0)
+		{
+			std::cout << "В числе ошибка" << std::endl;
+			exit(1);
+		}
 	}
 	void write() const
 	{
