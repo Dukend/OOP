@@ -21,26 +21,24 @@ private:
 	}
 
 public:
-	void read()
+	void read() // чтение и проверка
 	{
-		uint64_t tmp1, tmp2;
+		uint64_t tmp;
 
-		std::cin >> tmp1 >> tmp2;
-		if (tmp1 > std::numeric_limits<uint32_t>::max() || tmp1 < 0 || tmp2 > std::numeric_limits<uint32_t>::max() || tmp2 < 0)
+		std::cin >> tmp;
+		if (tmp > std::numeric_limits<uint64_t>::max() || tmp < 0)
 		{
 			std::cout << "В числе ошибка" << std::endl;
 			exit(1);
 		}
-		first = tmp1;
-		second = tmp2;
+		first = tmp >> 32u;
+		second = tmp & (0u - 1u);
 	}
 	void write() const
 	{
-		if (first != 0)
-		{
-			std::cout << first << " ";
-		}
-		std::cout << second;
+		uint64_t a = glue();
+		std::cout << a << '\n';
+		std::cout << first << " " << second;
 	}
 
 	Long add(const Long &next) const;  // сложение
@@ -68,12 +66,27 @@ Long Long::add(const Long &next) const
 Long Long::sub(const Long &next) const
 {
 	Long result;
-	result.first = this->first - next.first;
-	result.second = this->second - next.second;
-	if (this->second < next.second)
+	uint64_t a = glue();
+	uint64_t b = next.glue();
+	if (a >= b)
 	{
-		result.first -= 1;
+		result.first = this->first - next.first;
+		result.second = this->second - next.second;
+		if (this->second < next.second)
+		{
+			result.first -= 1;
+		}
 	}
+	else
+	{
+		result.first = next.first - this->first;
+		result.second = next.second - this->second;
+		if (next.second < this->second)
+		{
+			result.first -= 1;
+		}
+	}
+
 	return result;
 }
 
