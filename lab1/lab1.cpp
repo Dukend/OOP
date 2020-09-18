@@ -7,7 +7,7 @@
 class Long
 {
 private:
-	uint64_t first, second;
+	uint32_t first, second;
 	uint64_t glue() const
 	{ // склейка чисел
 		uint64_t result;
@@ -23,17 +23,16 @@ private:
 public:
 	void read()
 	{
-		std::cin >> first >> second;
-		if (this->first > std::numeric_limits<uint32_t>::max() || this->first < 0)
+		uint64_t tmp1, tmp2;
+
+		std::cin >> tmp1 >> tmp2;
+		if (tmp1 > std::numeric_limits<uint32_t>::max() || tmp1 < 0 || tmp2 > std::numeric_limits<uint32_t>::max() || tmp2 < 0)
 		{
 			std::cout << "В числе ошибка" << std::endl;
 			exit(1);
 		}
-		if (this->second > std::numeric_limits<uint32_t>::max() || this->second < 0)
-		{
-			std::cout << "В числе ошибка" << std::endl;
-			exit(1);
-		}
+		first = tmp1;
+		second = tmp2;
 	}
 	void write() const
 	{
