@@ -1,0 +1,10 @@
+1 0.2 1 0.2
+First number : 1 0.2p
+second number : 1 0.2p
++ = 2 0.2p
+- = 1.57019e-16 -0.25p
+* = 1 0.4p
+/ = 1 0p
+conj = 1 -0.2p
+conj = 1 -0.2p
+a == b
