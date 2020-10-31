@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/egork/Desktop/mai/OOP/lab4/lab4.cpp
+iostream
+-
+cstring
+-
+exception
+-
+tuple
+-
+utility
+-
+type_traits
+-
+cmath
+-
+

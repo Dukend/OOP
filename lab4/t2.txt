@@ -1,0 +1,9 @@
+Tuple
+Triangle
+5 5 21 7 0 32
+Tuple
+Square
+1 1 21 1 21 21 1 21
+Tuple
+Rectangle
+0 0 21 0 21 11 0 11
