@@ -1,3 +1,8 @@
+//////////////////
+// by Dukend    //
+//////////////////
+// 9
+//Figures:Triangle Square Rectangle
 #include <iostream>
 #include <cstring>
 #include <exception>
