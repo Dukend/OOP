@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -rdynamic CMakeFiles/prog.dir/lab5.cpp.o -o prog 
