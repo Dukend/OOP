@@ -450,7 +450,7 @@ void PushMenu()
 	std::cout << "3. Add shape by index\n\n";
 }
 
-void DelMenu()
+void DeleteMenu()
 {
 	std::cout << "1. Remove shape at the top of the list\n";
 	std::cout << "2. Remove shape at the end of the list\n";
@@ -489,7 +489,7 @@ int main()
 			}
 			break;
 		case 2:
-			DelMenu();
+			DeleteMenu();
 			std::cin >> com;
 			switch (com)
 			{
