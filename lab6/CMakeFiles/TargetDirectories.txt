@@ -1,0 +1,3 @@
+/mnt/c/Users/egork/Desktop/mai/OOP/lab6/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/egork/Desktop/mai/OOP/lab6/CMakeFiles/edit_cache.dir
+/mnt/c/Users/egork/Desktop/mai/OOP/lab6/CMakeFiles/prog.dir

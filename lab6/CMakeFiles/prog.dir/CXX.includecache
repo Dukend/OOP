@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/egork/Desktop/mai/OOP/lab6/lab6.cpp
+iostream
+-
+algorithm
+-
+iterator
+-
+memory
+-
+iostream
+-
+cmath
+-
+cstdlib
+-
+iostream
+-
+type_traits
+-
+queue
+-
+
