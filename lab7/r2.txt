@@ -1,0 +1,45 @@
+Actions:
+[push_begin / push_end]   [square / rectangle / trapezoid]   <cords>
+[pop_begin / pop_end]
+import [filename]
+export [filename]
+generate N
+undo
+exit
+
+List:
+---------------------------------------------
+> 
+List:
+Rectangle: <5, 5> <3.06162e-16, 10> <-5, 5> <-9.18485e-16, 0> 
+Square: <22, 15> <15, 22> <8, 15> <15, 8> 
+Square: <27, 13> <19, 21> <11, 13> <19, 5> 
+---------------------------------------------
+> 
+List:
+Trapezoid: <19, 13> <6, 26> <-7, 13> <6, 0> 
+Trapezoid: <21, 10> <7, 24> <-7, 10> <7, -4> 
+Trapezoid: <12, 15> <1, 26> <-10, 15> <1, 4> 
+Trapezoid: <2, 9> <1, 10> <0, 9> <1, 8> 
+Trapezoid: <14, 1> <8, 7> <2, 1> <8, -5> 
+Trapezoid: <26, 19> <15, 30> <4, 19> <15, 8> 
+---------------------------------------------
+> 
+List:
+Trapezoid: <19, 13> <6, 26> <-7, 13> <6, 0> 
+Trapezoid: <21, 10> <7, 24> <-7, 10> <7, -4> 
+Trapezoid: <12, 15> <1, 26> <-10, 15> <1, 4> 
+Trapezoid: <2, 9> <1, 10> <0, 9> <1, 8> 
+Trapezoid: <14, 1> <8, 7> <2, 1> <8, -5> 
+---------------------------------------------
+> Warning! File with name 'test.bin' already exists.
+Continuing will cause full data loss
+Continue? (y/n): 
+List:
+Trapezoid: <19, 13> <6, 26> <-7, 13> <6, 0> 
+Trapezoid: <21, 10> <7, 24> <-7, 10> <7, -4> 
+Trapezoid: <12, 15> <1, 26> <-10, 15> <1, 4> 
+Trapezoid: <2, 9> <1, 10> <0, 9> <1, 8> 
+Trapezoid: <14, 1> <8, 7> <2, 1> <8, -5> 
+---------------------------------------------
+> 
