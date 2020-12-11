@@ -1,0 +1,7 @@
+import test.bin
+generate 6
+pop_end
+export test.bin
+y
+exit
+y
